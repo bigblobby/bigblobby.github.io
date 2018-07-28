@@ -429,12 +429,6 @@ button:active {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  transition: all 0.2s;
-}
-
-.project:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 5px 0 #9d9d9d;
 }
 
 .project h4 {
@@ -988,11 +982,6 @@ button:active {
   
   .my-work {
     margin-bottom: 2em;
-  }
-  
-  .project:hover {
-    transform: none;
-    box-shadow: none;
   }
   
 /* Main Contact */
