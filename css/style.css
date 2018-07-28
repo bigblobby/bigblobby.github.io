@@ -682,6 +682,14 @@ button:active {
   height: 100%;
 }
 
+.modal-close {
+  position: absolute;
+  font-size: 3rem;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
 .modal-heading {
   display: flex;
   flex-direction: column;
@@ -933,6 +941,10 @@ button:active {
   
   .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
+  }
+  
+  .menu-icon {
+    padding: 1em;
   }
   
 /* Main header */

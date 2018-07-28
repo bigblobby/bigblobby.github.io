@@ -93,6 +93,7 @@ form.addEventListener('click', (e) => {
 const modalCheckbox = document.getElementById('trigger');
 const pageWrapper = document.getElementById('page-wrapper');
 const overlay = document.getElementById('modal-overlay');
+const modalCloseButton = document.getElementById('modal-close');
   
 modalCheckbox.addEventListener('change', () => {
   if(modalCheckbox.checked) {
@@ -102,6 +103,8 @@ modalCheckbox.addEventListener('change', () => {
     console.log('Modal opened'); 
   } 
 });
+
+modalCloseButton.addEventListener('click', closeModal);
   
 function closeModal() {
   window.removeEventListener('click', closeModal);
