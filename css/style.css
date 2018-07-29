@@ -302,15 +302,24 @@ button:active {
 
 .skills {
   margin-bottom: 3.75em;
+  padding: 3.75em 0;
+  background-color: rgb(5, 26, 56);
 }
 
 .skills h2 {
   font-size: 2.5rem;
-  color: #959595;
+  color: #d8d8d8;
   text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.skills h2:before {
+  height: 0;
 }
 
 .skills-wrapper {
+  max-width: 1230px;
+  margin: 0 auto;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
@@ -340,7 +349,7 @@ button:active {
 .box-2,
 .box-3,
 .box-4 {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(5, 26, 56);;
   padding: 1em;
   min-height: 100px;
   min-width: 100px;
@@ -400,6 +409,16 @@ button:active {
   grid-row: 2/3;
   font-size: 1.2rem;
   text-align: center;
+}
+
+.skills-offer,
+.skills-languages,
+.skills-tools,
+.box-1 p,
+.box-2 p,
+.box-3 p,
+.box-4 p {
+  color: #ebebeb;
 }
 
 /*----------------------------My Work---------------------------------------*/
@@ -495,7 +514,7 @@ button:active {
   height: 0;
   width: 100%;
   top: 0;
-  background: rgb(22, 90, 183);
+  background: rgb(5, 26, 56);
   transition: 0.5s;
 }
 
@@ -520,10 +539,16 @@ button:active {
   display: block;
   text-decoration: none;
   border: 1px solid #fff;
-  border-radius: 1px;
-  font-size: 1.5rem;
+  border-radius: 3px;
+  font-size: 1rem;
   color: #fff;
-  padding: 0 0.3em;
+  padding: 0.1em 0.3em 0;
+  transition: 0.3s;
+}
+
+.project-dropdown-content a:hover {
+  background: #fff;
+  color: rgb(22, 90, 183);
 }
 
 .dropdown-active {
@@ -535,9 +560,9 @@ button:active {
   position: absolute;
   color: #fff;
   top: 10px;
-  right: 10px;
+  right: 20px;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 /*----------------------------Main contact---------------------------------------*/
@@ -571,20 +596,22 @@ button:active {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--main-color);
+  background-color: rgb(5, 26, 56);
   color: #fff;
-  height: 300px;
-}
-
-.main-footer h3 {
-  color: #fff;
-  font-size: 2rem;
-  flex: 1 100%;
-  text-align: center;
+  height: 250px;
 }
 
 .social-box {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-box h3 {
+  flex: 1 100%;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .social {
@@ -593,15 +620,15 @@ button:active {
   text-decoration: none;
   height: 3em;
   width: 3em;
-  flex: 1 20%;
-  margin: 1em;
+  flex-basis: 50%;
+  margin-top: 1.5em;
 }
 
 .social-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-color);
+  background-color: rgb(5, 26, 56);
   color: #fff;
   font-size: 1.5rem;
   width: 100%;
@@ -636,10 +663,13 @@ button:active {
 .copyright {
   flex: 1 100%;
   text-align: center;
+  margin-top: 2em;
 }
 
 .top-button {
   background-color: #fff;
+  color: rgb(5, 26, 56);
+  border-color: rgb(5, 26, 56);
 }
 
 /*----------------------------Modal---------------------------------------*/
@@ -930,7 +960,7 @@ button:active {
   .menu-btn:checked ~ .nav {
     opacity: 0.8;
     visibility: visible;
-    height: 30vh;
+    height: 200px;
   }
   
   .menu-btn:checked ~ .menu-icon .navicon::after {
@@ -1088,7 +1118,7 @@ button:active {
   }
   
   .menu-btn:checked ~ .nav {
-    height: 20vh;
+    height: 150px;
   }
   
 /* Main Header */
