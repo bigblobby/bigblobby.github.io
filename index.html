@@ -1,231 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Nunito:300,400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Tom Dempster</title>
 </head>
+
 <body>
 
- <div id="page-wrapper"> 
-   <nav id="main-nav" class="main-nav">
-       <a id="logo" class="logo" href="">TDempster</a>
-       <input class="menu-btn" id="menu-btn" type="checkbox">
-       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-       <ul id="nav" class="nav">
-         <li><a href="#about-me">About</a></li>
-         <li><a href="#projects">Projects</a></li>
-         <li><a href="">Contact</a></li>
-       </ul>
-   </nav>
+  <div id="page-wrapper">
+    <div id="nav-wrapper" class="nav-wrapper">
+      <nav id="main-nav" class="main-nav">
+        <a id="logo" class="logo" href="">TDempster</a>
+        <input class="menu-btn" id="menu-btn" type="checkbox">
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span>
+        </label>
+        <ul id="nav" class="nav">
+          <li>
+            <a href="#about-me">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-   <div class="section-padding-wrapper">
-     <header id="main-header" class="main-header">
-       <h1>Hi I'm Tom,</h1>
-       <p>I'm a Web Developer living in the Devon countryside. </p>
-     </header>
-   </div>
-    
-   <main>   
-     <div class="section-padding-wrapper">
-       <section id="about-me" class="about-me">
-           <div class="about-me-inner">
-             <h2 class="about-me-h2">About</h2>
-             <p class="about-me-p">Hello for the second time. Me again. The photo you're looking at was taken in Canada whilst on holiday, so unfortunately I don't wake up to the view of a lake everyday, and no, that isn't my dog. I've been programming for a while now and I enjoy building and learning pretty much anything thrown at me.</p>
-             <input id="trigger" class="trigger" type="checkbox">
-             <label class="about-me-more" for="trigger">Want to read more about me?</label>
-           </div>
-           <div class="about-me-image">
-             <img src="img/me.jpeg" alt="Me">
-           </div>
-       </section>
-     </div>
-     
-     <div class="section-wrapper">
-       <section class="skills">
-         <h2>Skills</h2>
-         <div class="skills-wrapper">
-           <div class="skills-box box-1">
-            <span class="icon fab fa-accessible-icon"></span>
-            <p>Fast, accessible websites that everyone can use.</p>
-           </div>
-           <div class="skills-box box-2">
-             <span class="icon fas fa-clipboard-list"></span>
-             <p>Attention to detail, in design and development.</p>
-           </div>
-           <div class="skills-box box-3">
-             <span class="icon fas fa-mobile-alt"></span>
-             <p>Responsive websites that look good on every device</p>
-           </div>
-           <div class="skills-box box-4">
-             <span class="icon fas fa-fighter-jet"></span>
-             <p>Fluid content that moves around with ease.</p>
-           </div>
-           <div class="skills-offer">
-             <h4>What I do</h4>
-             <p>Fast, Fancy, Responsive Websites. Basically, I make fast loading websites look good on every device and browser. Simplicity is the forefront as users like easy to navigate web pages. This is why I focus largely on UX.</p>
-           </div>
-           <div class="skills-languages">
-             <h4>Languages</h4>
-             <p>HTML</p>
-             <p>CSS</p>
-             <p>Javascript</p>
-           </div>
-           <div class="skills-tools">
-             <h4>Tools</h4>
-             <p>VSCode</p>
-             <p>Brackets</p>
-             <p>NPM</p>
-             <p>Bootstrap</p>
-             <p>Git/Github</p>
-             <p>Command Line</p>
-           </div>
-         </div>
-       </section>
-     </div> <!-- section-padding-wrapper (end)-->
 
-     <div class="section-padding-wrapper"> 
-       <section id="projects" class="my-work">
-         <h2>My Work</h2>
-         <div class="projects">
-           <div class="project project-1">
-             <h4>The Mountain</h4>
-             <img src="img/Mountain.jpeg" alt="Mountain Project Image">
-             <p>This was an idea I had for a minimalist website with no scroll bars, its full to the brim with transitions and shows how much information you can provide in a small space.</p>
-             <button id="project-button-1" class="project-button">View More</button>
-             <div class="project-dropdown">
-               <span class="fas fa-times project-close"></span>
-               <div id="project-dropdown-content" class="project-dropdown-content">
-                 <img src="img/mountain2.jpeg" alt="Mountain Project Image">
-                 <p>This sites main focus was transitions and minimalism. I wanted to neatly fit a decent amount of content into a small space while remaining user friendly.</p>
-                 <div>
-                   <h4>Technologies</h4>
-                   <p>HTML, CSS, JavaScript</p>
-                 </div>
-                 <a href="http://tom-dempster.com/minimalistmountain/">Visit Site</a>
-               </div>
-             </div>
-           </div>
-           <div class="project project-2">
-             <h4>Word Filterer</h4>
-             <img src="img/wordfilterer.jpeg" alt="Mountain Project Image">
-             <p>The idea for this was to filter out 'bad' words and prevent the user from posting a status, whilst telling the user off for using such words. </p>
-             <button class="project-button">View More</button>
-             <div class="project-dropdown">
-               <span class="fas fa-times project-close"></span>
-               <div class="project-dropdown-content">
-                 <img src="img/wordfilterer2.jpeg" alt="Mountain Project Image">
-                 <p>Filtering out certain words prior to posting (comments, ect) is pretty important for websites/apps with younger audiences. This is my take on the concept. <br><span style="color: #860000">Code Contains Strong Language</span></p>
-                 <div>
-                   <h4>Technologies</h4>
-                   <p>HTML, CSS, JavaScript</p>
-                 </div>
-                 <a href="http://www.tom-dempster.com/wordfilter/">Visit Site</a>
-               </div>
-             </div>
-           </div>
-           <div class="project project-3">
-             <h4>Budget Planner</h4>
-             <img src="img/progress2.jpeg" alt="Mountain Project Image">
-             <p>I'm currently building a Budget Planner that shows you your income and expenses month by month.</p>
-           </div>
-           <div class="project project-4">
-             <h4>Future Project</h4>
-             <img src="img/progress2.jpeg" alt="Mountain Project Image">
-             <p>This will either include technologies like Bootstrap and jQuery or it'll be a JavaScript calculator.</p>
-           </div>
-         </div>
-       </section>
-     </div> <!-- section-padding-wrapper (end)-->
+    <div class="section-padding-wrapper">
+      <header id="main-header" class="main-header">
+        <h1>Hi I'm Tom,</h1>
+        <p>I'm a Web Developer living in the Devon countryside. </p>
+      </header>
+    </div>
 
-     <div class="section-wrapper gray">  
+    <main>
+      <div class="section-padding-wrapper">
+        <section id="about-me" class="about-me">
+          <div class="about-me-inner">
+            <h2 class="about-me-h2">About</h2>
+            <p class="about-me-p">Hello for the second time. Me again. The photo you're looking at was taken in Canada whilst on holiday, so unfortunately
+              I don't wake up to the view of a lake everyday, and no, that isn't my dog. I've been programming for a while
+              now and I enjoy building and learning pretty much anything thrown at me.</p>
+            <input id="trigger" class="trigger" type="checkbox">
+            <label class="about-me-more" for="trigger">Want to read more about me?</label>
+          </div>
+          <div class="about-me-image">
+            <img src="img/me.jpeg" alt="Me">
+          </div>
+        </section>
+      </div>
+
+      <div class="section-wrapper">
+        <section class="skills">
+          <h2>Skills</h2>
+          <div class="skills-wrapper">
+            <div class="skills-box box-1">
+              <span class="icon fab fa-accessible-icon"></span>
+              <p>Fast, accessible websites that everyone can use.</p>
+            </div>
+            <div class="skills-box box-2">
+              <span class="icon fas fa-clipboard-list"></span>
+              <p>Attention to detail, in design and development.</p>
+            </div>
+            <div class="skills-box box-3">
+              <span class="icon fas fa-mobile-alt"></span>
+              <p>Responsive websites that look good on every device</p>
+            </div>
+            <div class="skills-box box-4">
+              <span class="icon fas fa-fighter-jet"></span>
+              <p>Fluid content that moves around with ease.</p>
+            </div>
+            <div class="skills-offer">
+              <h4>What I do</h4>
+              <p>Fast, Fancy, Responsive Websites. Basically, I make fast loading websites look good on every device and browser.
+                Simplicity is the forefront as users like easy to navigate web pages. This is why I focus largely on UX.</p>
+            </div>
+            <div class="skills-languages">
+              <h4>Languages</h4>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>Javascript</p>
+            </div>
+            <div class="skills-tools">
+              <h4>Tools</h4>
+              <p>VSCode</p>
+              <p>Brackets</p>
+              <p>NPM</p>
+              <p>Bootstrap</p>
+              <p>Git/Github</p>
+              <p>Command Line</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- section-padding-wrapper (end)-->
+
+      <div class="section-padding-wrapper">
+        <section id="projects" class="my-work">
+          <h2>My Work</h2>
+          <div class="projects">
+            <div class="project project-1">
+              <h4>The Mountain</h4>
+              <img src="img/Mountain.jpeg" alt="Mountain Project Image">
+              <p>This was an idea I had for a minimalist website with no scroll bars, its full to the brim with transitions
+                and shows how much information you can provide in a small space.</p>
+              <button id="project-button-1" class="project-button">View More</button>
+              <div class="project-dropdown">
+                <span class="fas fa-times project-close"></span>
+                <div id="project-dropdown-content" class="project-dropdown-content">
+                  <img src="img/mountain2.jpeg" alt="Mountain Project Image">
+                  <p>This sites main focus was transitions and minimalism. I wanted to neatly fit a decent amount of content
+                    into a small space while remaining user friendly.</p>
+                  <div>
+                    <h4>Technologies</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                  </div>
+                  <a href="http://tom-dempster.com/minimalistmountain/">Visit Site</a>
+                </div>
+              </div>
+            </div>
+            <div class="project project-2">
+              <h4>Word Filterer</h4>
+              <img src="img/wordfilterer.jpeg" alt="Mountain Project Image">
+              <p>The idea for this was to filter out 'bad' words and prevent the user from posting a status, whilst telling
+                the user off for using such words. </p>
+              <button class="project-button">View More</button>
+              <div class="project-dropdown">
+                <span class="fas fa-times project-close"></span>
+                <div class="project-dropdown-content">
+                  <img src="img/wordfilterer2.jpeg" alt="Mountain Project Image">
+                  <p>Filtering out certain words prior to posting (comments, ect) is pretty important for websites/apps with
+                    younger audiences. This is my take on the concept.
+                    <br>
+                    <span style="color: #860000">Code Contains Strong Language</span>
+                  </p>
+                  <div>
+                    <h4>Technologies</h4>
+                    <p>HTML, CSS, JavaScript</p>
+                  </div>
+                  <a href="http://www.tom-dempster.com/wordfilter/">Visit Site</a>
+                </div>
+              </div>
+            </div>
+            <div class="project project-3">
+              <h4>Budget Planner</h4>
+              <img src="img/progress2.jpeg" alt="Mountain Project Image">
+              <p>I'm currently building a Budget Planner that shows you your income and expenses month by month.</p>
+            </div>
+            <div class="project project-4">
+              <h4>Future Project</h4>
+              <img src="img/progress2.jpeg" alt="Mountain Project Image">
+              <p>This will either include technologies like Bootstrap and jQuery or it'll be a JavaScript calculator.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- section-padding-wrapper (end)-->
+
+      <div class="section-wrapper gray">
         <section class="main-contact">
           <h3>Get In Touch</h3>
           <p>Want to hire me or talk some more?</p>
           <button id="main-contact-button">Contact Me</button>
         </section>
-     </div> <!-- section-wrapper (end)-->
-   </main>
-  
-   <div class="section-wrapper"> 
+      </div>
+      <!-- section-wrapper (end)-->
+    </main>
+
+    <div class="section-wrapper">
       <footer class="main-footer">
-         <div class="social-box">
-           <h3>Find Me On</h3>
-           <a href="https://github.com/bigblobby" target="_blank" class="social github">
-             <span class="fab fa-github social-icon"></span>
-           </a>
-           <a href="https://codepen.io/BigBlobby/" target="_blank" class="social codepen">
-             <span class="fab fa-codepen social-icon"></span>
-           </a>
-         </div>
-         <p class="copyright">Tom Dempster &copy; 2018. Built in the UK</p>
-         <button class="top-button" id="top-button">Back to top</button>
+        <div class="social-box">
+          <h3>Find Me On</h3>
+          <a href="https://github.com/bigblobby" target="_blank" class="social github">
+            <span class="fab fa-github social-icon"></span>
+          </a>
+          <a href="https://codepen.io/BigBlobby/" target="_blank" class="social codepen">
+            <span class="fab fa-codepen social-icon"></span>
+          </a>
+        </div>
+        <p class="copyright">Tom Dempster &copy; 2018. Built in the UK</p>
+        <button class="top-button" id="top-button">Back to top</button>
       </footer>
-   </div> <!-- section-wrapper (end)-->
- </div>  <!-- page-wrapper (end) -->
- 
- 
-<!-- Modal below -->
- 
-<div class="modal-overlay" id="modal-overlay">
-  <div class="modal-wrap">
-    <span id="modal-close" class="fas fa-times modal-close"></span>
-    <div class="modal-heading">
-      <h3>Tom Dempster</h3>
-      <h4>Front-end Developer</h4>
     </div>
-    <div class="modal-content">
-      <p>My journey began on November 27th 2017, Cyber Monday funnily enough. I was trawling through the internet looking for my next venture, then Web Development cropped up. Thats when I decided, this is what I want to do. I've always had an interest in computers and tech since as long as I can remember. I still can't believe its taken me this long to find programming, but I've found it and so it begins.</p>
-      <p>I currently enjoy building things from scratch(no, not the language) as I like the challenge of creating new designs and flexibility a blank canvas provides me, this isn't a viable option for every project though, which is why WordPress and other Content Managment Systems are on my radar.</p>
-      <p>I have a special interest in minimalism, UX, and animation, and I believe websites not only need to look good, but they need to be easy to navigate and accessible to everyone. </p>
+    <!-- section-wrapper (end)-->
+  </div>
+  <!-- page-wrapper (end) -->
+
+
+  <!-- Modal below -->
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-wrap">
+      <span id="modal-close" class="fas fa-times modal-close"></span>
+      <div class="modal-heading">
+        <h3>Tom Dempster</h3>
+        <h4>Front-end Developer</h4>
+      </div>
+      <div class="modal-content">
+        <p>My journey began on November 27th 2017, Cyber Monday funnily enough. I was trawling through the internet looking
+          for my next venture, then Web Development cropped up. Thats when I decided, this is what I want to do. I've always
+          had an interest in computers and tech since as long as I can remember. I still can't believe its taken me this
+          long to find programming, but I've found it and so it begins.</p>
+        <p>I currently enjoy building things from scratch(no, not the language) as I like the challenge of creating new designs
+          and flexibility a blank canvas provides me, this isn't a viable option for every project though, which is why WordPress
+          and other Content Managment Systems are on my radar.</p>
+        <p>I have a special interest in minimalism, UX, and animation, and I believe websites not only need to look good, but
+          they need to be easy to navigate and accessible to everyone. </p>
+      </div>
     </div>
   </div>
-</div>     
-     
-<!-- Contact me -->
 
-<button id="contact-me-open" class="contact-me-open">Contact Me</button>
-<div id="contact-slider" class="contact-slider">
-  <div id="contact-area" class="contact-area">
-    <div class="contact-header">
-      <h3>Get in touch!</h3>
-      <p>If you have any questions about my projects, or about myself and the work that I do, please contact me using the form below.</p>
-      <p style="color: red; font-size: 0.8em;">This form doesn't work at the moment. Please email me directly at me@tom-dempster.com</p>
+  <!-- Contact me -->
+
+  <button id="contact-me-open" class="contact-me-open">Contact Me</button>
+  <div id="contact-slider" class="contact-slider">
+    <div id="contact-area" class="contact-area">
+      <div class="contact-header">
+        <h3>Get in touch!</h3>
+        <p>If you have any questions about my projects, or about myself and the work that I do, please contact me using the
+          form below.</p>
+        <p style="color: red; font-size: 0.8em;">This form doesn't work at the moment. Please email me directly at me@tom-dempster.com</p>
+      </div>
+      <form id="contact-form" class="contact-form" action="">
+        <label for="contact-name">Name:</label>
+        <input id="contact-name" type="text">
+        <label for="contact-email">Email:</label>
+        <input id="contact-email" type="email">
+        <label for="contact-subject">Subject:</label>
+        <input id="contact-subject" type="text">
+        <label for="contact-message">Message:</label>
+        <textarea id="contact-message" name="contact-message"></textarea>
+        <button class="contact-submit" type="submit">Send Message</button>
+        <button class="contact-me-close">Close</button>
+      </form>
     </div>
-    <form id="contact-form" class="contact-form" action="">
-      <label for="contact-name">Name:</label>
-      <input id="contact-name" type="text">
-      <label for="contact-email">Email:</label>
-      <input id="contact-email" type="email">
-      <label for="contact-subject">Subject:</label>
-      <input id="contact-subject" type="text">
-      <label for="contact-message">Message:</label>
-      <textarea id="contact-message" name="contact-message"></textarea>
-      <button class="contact-submit" type="submit">Send Message</button>
-      <button class="contact-me-close">Close</button>
-  </form>
   </div>
-</div>
 
-<script src="js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
