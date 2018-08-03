@@ -14,18 +14,18 @@ topButton.addEventListener("click", () => {
 
 viewWorkButton.addEventListener('click', () => {
   document.getElementById("my-work")
-          .scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
+    .scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
 });
 
 nav.addEventListener("click", e => {
   e.preventDefault();
   if (e.target.textContent === "About") {
     document.getElementById("about-me")
-            .scrollIntoView({ behavior: "smooth", alignToTop: false });
+      .scrollIntoView({ behavior: "smooth", alignToTop: false });
     mobileCheckbox.checked = false;
   } else if (e.target.textContent === "Work") {
     document.getElementById("my-work")
-            .scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
+      .scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
     mobileCheckbox.checked = false;
   } else if (e.target.textContent === "Contact") {
     mobileCheckbox.checked = false;
@@ -42,7 +42,7 @@ window.addEventListener("scroll", () => {
   let currentPosition = window.pageYOffset;
   if (previousPosition > currentPosition) {
     navWrap.style.top = "0"; //Show
-  } else if (window.pageYOffset === 0) {
+  } else if (window.pageYOffset < 2) {
     //This else if fixed a bug in safari...bloody safari
     navWrap.style.top = "0"; //Show
   } else {
@@ -73,7 +73,7 @@ mainContactButton.addEventListener("click", () => {
 function openContactSlider() {
   slider.style.transform = "translateX(0)";
   pageWrapper.classList.add("blur");
-  setTimeout( () => pageWrapper.addEventListener("click", closeContactSlider), 50); //If page is clicked, except the slider area. Slider closes. The timeout fixes a bug, when clicking the navbar 'contact' link.
+  setTimeout(() => pageWrapper.addEventListener("click", closeContactSlider), 50); //If page is clicked, except the slider area. Slider closes. The timeout fixes a bug, when clicking the navbar 'contact' link.
   console.log("Contact form opened");
 }
 
@@ -125,14 +125,14 @@ function closeModal() {
 
 //Work/Projects
 
-const viewMoreButtons = document.querySelectorAll("#projects button");
+const viewMoreButtons = document.querySelectorAll("#my-work button");
 const projectClose = document.querySelectorAll(".project-close");
 
 viewMoreButtons.forEach(button => {
   button.addEventListener("click", e => {
     const projectContent = e.target.nextElementSibling.firstElementChild.nextElementSibling;
     e.target.nextElementSibling.classList.add("dropdown-active");
-    setTimeout( () => (projectContent.style.opacity = 1), 400);
+    setTimeout(() => (projectContent.style.opacity = 1), 400);
   });
 });
 
@@ -140,6 +140,6 @@ projectClose.forEach(button => {
   button.addEventListener("click", e => {
     const projectContent = e.target.nextElementSibling;
     projectContent.style.opacity = 0;
-    setTimeout( () => e.target.parentElement.classList.remove("dropdown-active"), 100);
+    setTimeout(() => e.target.parentElement.classList.remove("dropdown-active"), 100);
   });
 });
