@@ -5,10 +5,16 @@ const nav = document.getElementById("nav");
 const mobileCheckbox = document.getElementById("menu-btn");
 const topButton = document.getElementById("top-button");
 const header = document.getElementById("main-header");
+const viewWorkButton = document.getElementById('view-work');
 //Listening for clicks on links
 
 topButton.addEventListener("click", () => {
   header.scrollIntoView({ behavior: "smooth", block: "end", inline: "end" });
+});
+
+viewWorkButton.addEventListener('click', () => {
+  document.getElementById("my-work")
+          .scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
 });
 
 nav.addEventListener("click", e => {
@@ -17,8 +23,8 @@ nav.addEventListener("click", e => {
     document.getElementById("about-me")
             .scrollIntoView({ behavior: "smooth", alignToTop: false });
     mobileCheckbox.checked = false;
-  } else if (e.target.textContent === "Projects") {
-    document.getElementById("projects")
+  } else if (e.target.textContent === "Work") {
+    document.getElementById("my-work")
             .scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
     mobileCheckbox.checked = false;
   } else if (e.target.textContent === "Contact") {
