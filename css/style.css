@@ -228,7 +228,7 @@ button:active {
   background-color: var(--main-color);
   color: #fff;
   padding: 0.5em 1em;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   animation-name: fadeIn;
   animation-delay: 2s;
   animation-duration: 1.5s;
